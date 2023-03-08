@@ -1,5 +1,7 @@
 ##undefined and not defined
 
+`JavaScript` is `loosely` typed language / `weakly` typed  language
+
 ## undefined
 - `undefined` is like a placeholder which is place in the memory.
 - `undefined` is different than `not defined`.
@@ -27,3 +29,10 @@
 ```javascript
     console.log(x);
 ```
+
+### Note :
+- Never do 
+    ```javascript
+        a = undefined;
+    ```
+- It is possible to assign `undefined` to a variable.It is not good practice
