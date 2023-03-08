@@ -1,4 +1,4 @@
-## undefined and not defined
+##undefined and not defined
 
 ## undefined
 - `undefined` is like a placeholder which is place in the memory.
@@ -6,7 +6,7 @@
 - `undefined` is a speacial keyword it takes up its own memory
 - `undefined` is kept for time being until variable assign some other value
 
-# Examples :
+### Examples :
 
 ```javascript
     var a;
@@ -22,7 +22,7 @@
 
 - `not defined` means not allocated memory.
 
-# Example : 
+### Example : 
 
 ```javascript
     console.log(x);
