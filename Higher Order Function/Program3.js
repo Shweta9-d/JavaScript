@@ -16,14 +16,27 @@ const diameter = function (radius) {
   return 2 * radius;
 };
 
-const calculate = function (radius, logic) {
+const calculate = function (arr, logic) {
   const output = [];
-  for (let i = 0; i < radius.length; i++) {
-    output.push(logic(radius[i]));
+  for (let i = 0; i < arr.length; i++) {
+    output.push(logic(arr[i]));
   }
   return output;
 };
 
-console.log(calculate(radius, area));
-console.log(calculate(radius, circumference));
-console.log(calculate(radius.diameter));
+//Here we created function like map()
+Array.prototype.calculate = function (logic) {
+  const output = [];
+  for (let i = 0; i < this.length; i++) {
+    output.push(logic(this[i]));
+  }
+  return output;
+};
+
+//calculate() works exactly like a map
+console.log(radius.map(area));
+
+console.log(radius.calculate(area));
+
+// console.log(calculate(radius, circumference));
+// console.log(calculate(radius.diameter));
