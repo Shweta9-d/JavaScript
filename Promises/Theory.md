@@ -13,3 +13,9 @@
 - It helps prevent callback hell, through promise chaining.
 
 - It only has 3 states  only: "Pending", "Fulfilled", "Rejected".
+
+`pending`: initial state, neither fulfilled nor rejected.
+
+`fulfilled`: meaning that the operation was completed successfully.
+
+`rejected`: meaning that the operation failed.
